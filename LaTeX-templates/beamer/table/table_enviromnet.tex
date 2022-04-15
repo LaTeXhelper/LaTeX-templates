@@ -1,0 +1,23 @@
+% description: add a table in beamer
+
+\begin{frame}{A realistic table}
+    You can see how the table I have made looks in Table \ref{tab:table}
+    
+    \begin{table}
+    \caption{A realistic table I have built}
+    \label{tab:table}
+    
+    \begin{tabular}{|c||ccc|}
+    \hline \hline
+        Small col & \multicolumn{3}{|c|}{Big col} \\
+    \hline
+        Grouped items & \multicolumn{3}{|c|}{Item 1} \\
+    \cline{2-4}
+        & \multicolumn{3}{|c|}{Item 2} \\
+    \hline
+        Usual row & Spam & Bacon & Eggs \\
+    \hline\hline
+    \end{tabular}
+    \end{table}
+    
+\end{frame}

@@ -1,0 +1,13 @@
+table_style: 1 # 默认表格样式
+windows_editor: notepad # windows平台下，创建模板使用的默认编辑器
+linux_editor: vim # linux平台下，创建模板使用的默认编辑器
+windows_json_path: None # windows平台下，生成的用户代码片段json文件的输出路径，需要用户自行添加
+linux_json_path: None # linux平台下，生成的用户代码片段json文件的输出路径，需要用户自行添加
+using_utf8: true # 在使用markdown生成latex PDF时，是否支持utf-8
+using_section_number: false # 在使用markdown生成latex PDF时，是否对标题进行标号
+tex_compiler: xelatex # 在使用markdown生成latex PDF时，使用的latex编译器
+tex_trash_files: # 在tex编译过程中，需要删除的中间文件
+  - .aux
+  - .log
+  - .out
+  - .toc

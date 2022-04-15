@@ -1,0 +1,9 @@
+% description: overlay with commands in beamer
+
+\begin{frame}{commands}
+    If you want to learn Beamer\uncover<2>{, follow latex-beamer.com!} \\
+    If you want to learn Beamer\visible<2>{, follow latex-beamer.com!} \\
+    If you want to learn Beamer\invisible<2>{, follow latex-beamer.com!} \\
+    \alt<2>{We are on slide 2!}{We are not on slide 2} \\
+    \only<2>{\color{red}}  This text is red only on slide 2. \\
+\end{frame}

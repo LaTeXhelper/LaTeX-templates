@@ -1,0 +1,41 @@
+% description: an example of recurring table of contents
+
+% Title page details: 
+\title{How to make “outline” frame in Beamer?} 
+\author{latex-beamer.com}
+\date{\today}
+
+% Title page frame
+\begin{frame}
+    \titlepage 
+\end{frame}
+
+% Outline frame
+\begin{frame}{Outline}
+    \tableofcontents
+    % \tableofcontents[hideallsubsections]
+    % \tableofcontents[pausesections]
+\end{frame}
+
+% show the contents at the beginning of a section
+\AtBeginSection[ ]
+{
+\begin{frame}{Outline}
+    \tableofcontents[currentsection]
+\end{frame}
+}
+
+% Presentation structure
+\section{Problem statement}
+\section{Existing results}
+    \subsection{Method 1}
+    \subsection{Method 2}
+    \subsection{Method 3}
+\section{Comparative study}
+\section*{References}
+
+\begin{frame}
+% to enforce entries in the table of contents
+\end{frame}
+ 
+\end{document}

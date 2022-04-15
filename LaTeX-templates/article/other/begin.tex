@@ -1,0 +1,36 @@
+
+% description: The template of a latex framework
+% requirements(optional):
+
+% Add your templates below:
+
+\documentclass[UTF8]{ctexart}
+\usepackage{capt-of}
+\usepackage{indentfirst}
+\usepackage{ctex}
+\usepackage{graphicx}
+\usepackage[a4paper,left=20mm,right=20mm,top=30mm,bottom=30mm]{geometry}
+
+\title{TITLE}
+\author{Null}
+\date{\today}
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \section{1}
+    
+    
+\begin{center}
+    \includegraphics[width=0.8\textwidth,height=0.4\textheight]{1.png}
+    \captionof{figure}{picture}
+\end{center}
+
+\begin{tabular}{|c|c|c|}
+    \hline
+    1 & 2 & 3
+\hline
+\end{tabular}
+\captionof{table}{table}
+
+\end{document}

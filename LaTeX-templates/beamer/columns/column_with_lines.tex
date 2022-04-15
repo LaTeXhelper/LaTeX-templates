@@ -1,0 +1,32 @@
+% author: nullptr
+% description: split 2 columns with a line
+
+\begin{frame}{Vertical line between columns}
+    \begin{columns}
+    % Column 1
+        \begin{column}{0.49\textwidth}
+        
+        \begin{itemize}
+            \item Input layer: 2 neurons.
+            \item Hidden layer: 5 neurons.
+            \item Output layer: 2 neurons.
+        \end{itemize}
+        
+        \end{column}
+    
+    % Column 2 (vertical line)
+        \begin{column}{.02\textwidth}
+            \rule{.1mm}{0.7\textheight}
+        \end{column}
+    
+    % Column 3    
+        \begin{column}{0.49\textwidth}
+            \begin{itemize}
+                \item Input layer: 2 neurons.
+                \item Hidden layer: 5 neurons.
+                \item Output layer: 2 neurons.
+            \end{itemize}
+        \end{column}
+        
+    \end{columns}
+\end{frame}

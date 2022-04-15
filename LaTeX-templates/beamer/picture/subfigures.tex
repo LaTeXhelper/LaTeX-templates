@@ -1,0 +1,27 @@
+% description: add subfigures in beamer
+% requirement: \usepackage{subcaption}
+
+% so that the captions are numerated
+% \setbeamertemplate{caption}[numbered]
+
+\begin{frame}{Subfigures in Beamer}
+
+    You can see in Figure \ref{fig:images} that I have inserted two images, Figures \ref{fig:nature1} and \ref{fig:nature2}, that I can reference independently.
+    
+    \begin{figure}
+    \centering
+        \begin{subfigure}[t]{0.4\textwidth}
+            \includegraphics[width=0.6\textwidth]{c.png}
+            \caption{Image of the V1.}
+            \label{fig:nature1}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.4\textwidth}
+            \includegraphics[width=\textwidth]{b.png}
+            \caption{Image of the V2.}
+            \label{fig:nature2}
+        \end{subfigure}
+    \caption{Two images I want to insert.}
+    \label{fig:images}
+    \end{figure}
+    
+\end{frame}

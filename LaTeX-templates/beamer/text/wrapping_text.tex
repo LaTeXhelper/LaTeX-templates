@@ -1,0 +1,13 @@
+% description: add wrapping text around a image
+% requirement: \usepackage{wrapfig} \usepackage{blindtext}
+
+\begin{frame}{How to wrap text around a graphic.}
+
+    \begin{wrapfigure}{r}{0.5\textwidth}
+        \centering
+        \includegraphics[width=0.2\textwidth]{a.png}
+        \caption{Wrapping text around figures}
+    \end{wrapfigure}
+    
+    \small \blindtext % add your text there
+\end{frame}
